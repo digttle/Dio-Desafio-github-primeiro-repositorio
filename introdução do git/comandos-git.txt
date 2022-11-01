@@ -1,0 +1,151 @@
+
+Links para Download do git - https://git-scm.com/downloads
+* https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-64-bit.exe
+*https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/PortableGit-2.38.1-64-bit.7z.exe
+
+
+Alguns comandos usados no git
+
+(Eng)	Configure the author name and email address to be used with your commits.
+	Note that Git strips some characters (for example trailing periods) from user.name.
+(Pt-br) Diga ao Git quem você é Configure o nome do autor e o endereço de e-mail a serem usados com seus compromissos.	
+	Observe que o Git tira alguns caracteres (por exemplo, períodos de trilha) de user.name.
+
+	git config --global user.name "Sam Smith" (Nome do Autor )
+	git config --global user.email sam@example.com (Email do Autor)
+
+(Eng)   Create a new local repository
+(Pt-br) Crie um novo repositório local	 	
+	
+	git init
+
+(Eng)	Check out a repository	Create a working copy of a local repository:	
+(Pt-br)	Confira um repositório Crie uma cópia de funcionamento de um repositório local:
+	
+	git clone /path/to/repository
+ 	
+(Eng)	For a remote server, use:	
+(Pt-br)	Para um servidor remoto, use:
+	
+	git clone username@host:/path/to/repository
+
+(Eng)	Add one or more files to staging (index):
+(Pt-br) Adicionar um ou mais arquivos à encenação (índice):
+	
+	git add *
+
+(Eng)	Commit changes to head (but not yet to the remote repository):
+(Pt-br)	Comprometa alterações na cabeça (mas ainda não no repositório remoto):
+
+	git commit -m "Commit message"
+
+(Eng)	Commit any files you've added with git add, and also commit any files you've changed since then:	
+(Pt-br)	Comprometa todos os arquivos adicionados com o git add e também comprometa todos os arquivos que você alterou desde então:
+	
+	git commit -a
+
+(Eng)	Push-Send changes to the main branch of your remote repository:	
+(Pt-br)	Push-Envie alterações para o ramo principal do seu repositório remoto:
+
+	git push origin main
+
+(Eng)	Status	List the files you've changed and those you still need to add or commit:	
+(Pt-br)	Lista de status os arquivos que você alterou e aqueles que você ainda precisa adicionar ou comprometer:
+
+	git status
+
+(Eng)	Connect to a remote repository	If you haven't connected your local repository to a remote server, add the server to be able to push to it:	
+(pt-br)	Conecte-se a um repositório remoto Se você não tiver conectado seu repositório local a um servidor remoto, adicione o servidor para poder pressioná-lo:
+
+	git remote add origin
+
+(Eng) 	List all currently configured remote repositories:
+(pt-br)	Liste todos os repositórios remotos configurados atualmente:	
+	git remote -v
+
+(Eng)	Branches - Create a new branch and switch to it:	
+(Pt-br)	Branches - Crie um novo branch  e mude para ele:
+	
+	git checkout -b
+
+(Eng)  	Switch from one branch to another:	
+(Pt-br)	Mude de um ramo para outro:
+
+	git checkout
+
+(Eng)	List all the branches in your repo, and also tell you what branch you're currently in:	
+(Pt-br)	Liste todas as filiais em seu repo, e também diga em que ramo você está atualmente:
+	
+	git branch
+
+(Eng)	Lista de status os arquivos que você alterou e aqueles que você ainda precisa adicionar ou comprometer:	
+(Pt-br)
+	git branch -d
+
+(Eng)	Push the branch to your remote repository, so others can use it:
+(Pt-br)	Empurre o ramo para o repositório remoto, para que outros possam usá-lo:	
+
+	git push origin
+
+(Eng)	Push all branches to your remote repository:
+(Pt-br) Empurre todos os branches para o repositório remoto:	
+
+	git push --all origin
+
+(Eng) 	Delete a branch on your remote repository:	
+(Pt-br) Exclua um branch no repositório remoto:
+
+	git push origin :Update from the remote repository	
+
+(Eng)	Fetch and merge changes on the remote server to your working directory:
+(Pt-br)	Buscar e mesclar alterações no servidor remoto para o seu diretório de trabalho:
+	
+	git pull
+ 	
+(Eng)	To merge a different branch into your active branch:	
+(Pt-br)	Para mesclar um ramo diferente em seu ramo ativo:
+	
+	git merge
+
+(Eng)	View all the merge conflicts:View the conflicts against the base file:Preview changes, before merging:	
+(Pt-br)	Exibir todos os conflitos de fusão:Exibir os conflitos contra o arquivo base:Visualizar alterações, antes de fundir:
+
+	git diff
+	git diff --base
+	git diff
+
+(Eng) 	After you have manually resolved any conflicts, you mark the changed file:	
+(Pt-br)	Depois de resolver manualmente quaisquer conflitos, marque o arquivo alterado:
+
+	git add
+
+(Eng)	Tags-You can use tagging to mark a significant changeset, such as a release:	
+(Pt-br)	
+	git tag 1.0.0
+
+(Eng) 	CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using:	
+(Pt-br)	CommitId é o personagem principal do ID do changeset, até 10, mas deve ser único. Obter o ID usando:	
+
+	git log
+	
+(Eng) 	Push all tags to remote repository:	
+(Pt-br)	Empurre todas as tags para o repositório remoto:
+
+	git push --tags origin
+
+(Eng)	Undo local changes-If you mess up, you can replace the changes in your working tree with the last content in head:Changes already added to the index, as well as new files, will be kept.	
+(Pt-br)	Desfazer as alterações locais - Se você errar, você pode substituir as alterações em sua árvore de trabalho com o último conteúdo na cabeça:As alterações já adicionadas ao índice, bem como novos arquivos, serão mantidas.
+
+	git checkout --
+
+(Eng) 	Instead, to drop all your local changes and commits, fetch the latest history from the server and point your local main branch at it, do this:	git fetch origin
+(Pt-br)	Em vez disso, para deixar cair todas as suas alterações e compromissos locais, buscar o último histórico do servidor e apontar sua filial principal local para ele, faça isso: git buscar origem
+
+	git reset --hard origin/main
+
+(Eng)	Search-Search the working directory for foo():	
+(Pt-br)	Pesquise o diretório de trabalho para foo():
+
+	git grep "foo()"
+
+
