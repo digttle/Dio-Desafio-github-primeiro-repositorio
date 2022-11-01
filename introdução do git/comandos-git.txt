@@ -120,7 +120,7 @@ Alguns comandos usados no git
 	git add
 
 (Eng)	Tags-You can use tagging to mark a significant changeset, such as a release:	
-(Pt-br)	
+(Pt-br)	Tags-Você pode usar a marcação para marcar um beco semeamento significativo, como uma versão:
 	git tag 1.0.0
 
 (Eng) 	CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using:	
